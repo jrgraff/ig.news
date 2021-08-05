@@ -21,7 +21,7 @@ jest.mock('next-auth/client', () => {
 })
 
 describe('Header component', () => {
-  test('should be able to renders correctly', () => {
+  it('should be able to renders correctly', () => {
     render(
       <Header />
     )
