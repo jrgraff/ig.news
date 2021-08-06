@@ -2,8 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { mocked } from "ts-jest/utils"
 
 import { stripe } from '../../services/stripe'
-import Home from '../../pages'
-import { getStaticProps } from "../../pages";
+import Home, { getStaticProps } from '../../pages'
 
 jest.mock('next/router')
 jest.mock('next-auth/client', () => {
@@ -13,7 +12,7 @@ jest.mock('next-auth/client', () => {
 })
 jest.mock('../../services/stripe')
 
-describe('Homepage', () => {
+describe('Home page', () => {
   it('should be able to render correctly', () => {
     render(<Home product={{ priceId: 'fake-price-id', amount: 'fake-amount' }} />)
 
