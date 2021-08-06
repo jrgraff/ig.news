@@ -13,7 +13,7 @@ const posts = [{
   updatedAt: 'fake-post-update',
 }]
 
-describe('Posts page', () => {
+describe('Post page', () => {
   it('should be able to render correctly', () => {
     render(<Posts posts={posts} />)
 
